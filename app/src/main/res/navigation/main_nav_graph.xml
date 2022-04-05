@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/betterFuelFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.lugamvazori.calculaflex.ui.login.LogInFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_betterFuelFragment"
+            app:destination="@id/betterFuelFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="br.com.lugamvazori.calculaflex.ui.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_betterFuelFragment"
+            app:destination="@id/betterFuelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/betterFuelFragment"
+        android:name="br.com.lugamvazori.calculaflex.ui.betterfuel.BetterFuelFragment"
+        android:label="BetterFuelFragment"
+        tools:layout="@layout/fragment_better_fuel">
+
+        <argument
+            android:name="user_email"
+            app:argType="string"
+            android:defaultValue="Não definido" />
+    </fragment>
+</navigation>

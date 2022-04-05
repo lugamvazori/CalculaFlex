@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371599549324",
+    "project_id": "calcula-flex-scj",
+    "storage_bucket": "calcula-flex-scj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371599549324:android:de617ef0c0252b9dbc6ca9",
+        "android_client_info": {
+          "package_name": "br.com.lugamvazori.calculaflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371599549324-os5pa8j55c72mdo3sa2uc0kodtlqv4t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm3EQtggOCoQRffBiUe5KjslHxe5e2RyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371599549324-os5pa8j55c72mdo3sa2uc0kodtlqv4t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
